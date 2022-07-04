@@ -1,0 +1,43 @@
+.game_elements{
+  width: 800px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+
+  /* background: url("https://media.istockphoto.com/vectors/pixel-art-style-noise-seamless-vector-background-colorful-vector-id530769666"); */
+  background: url("https://pbs.twimg.com/media/EZ783JZXQAYMXI2.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.boot_game{
+  width: 288px;
+  height: 512px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.game_canvas{
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.game_relode_but{
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  align-items: center;
+}
+.game_relode_but:hover{
+  background-color: green;
+  color: white;
+}
