@@ -1,18 +1,18 @@
-var canvas = document.getElementById("canvas");
-var context = canvas.getContext("2d");
+let canvas = document.getElementById("canvas");
+let context = canvas.getContext("2d");
 
-var bird = new Image();
-var background = new Image();
-var foreground = new Image();
-var pipeUp = new Image();
-var pipeDown = new Image();
-var sale_persent = new Image();
-var game_lose = new Image();
-var winner = new Image();
-var upAudio = new Audio();
-var pointsAudio = new Audio();
-var score_for_sale = document.getElementById('score_of_fb');
-var game_relode_but = document.getElementById('game_relode_but');
+let bird = new Image();
+let background = new Image();
+let foreground = new Image();
+let pipeUp = new Image();
+let pipeDown = new Image();
+let sale_persent = new Image();
+let game_lose = new Image();
+let winner = new Image();
+let upAudio = new Audio();
+let pointsAudio = new Audio();
+let score_for_sale = document.getElementById('score_of_fb');
+let game_relode_but = document.getElementById('game_relode_but');
 
 
 bird.src = "img_game/boot.png";
@@ -26,11 +26,11 @@ winner.src = "img_game/win.png";
 upAudio.src = "audio_game/fly.mp3";
 pointsAudio.src = "audio_game/score.mp3";
 
-var distance = 90;
-var xb = 10;
-var yb = 150;
-var grav = 2;
-var points = 0;
+let distance = 90;
+let xb = 10;
+let yb = 150;
+let grav = 2;
+let points = 0;
 
 document.addEventListener("keydown", function(event) {
   if (event.code == 'Space') {
@@ -48,7 +48,7 @@ pipes[0] = {
 function draw() {
 
   context.drawImage(background, 0, 0);
-  for (var i = 0; i < pipes.length; i++) {
+  for (let i = 0; i < pipes.length; i++) {
     context.drawImage(pipeUp, pipes[i].x, pipes[i].y);
     context.drawImage(sale_persent, pipes[i].x, pipes[i].y + 270, 50, 50);
     context.drawImage(pipeDown, pipes[i].x, pipes[i].y +
